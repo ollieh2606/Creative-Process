@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How I turn a question into an experience</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1d1a38;--panel:#2a2650;--ink:#f3f2f8;--mute:#b3b0cf;--gel1:#f2a93b;--gel2:#e5407f;--gel3:#35c7b8;--line:#4a4580;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eeedf6;--panel:#fff;--ink:#1d1a38;--mute:#5b5883;--line:#c4c1e0}}
+:root[data-theme="light"]{--bg:#eeedf6;--panel:#fff;--ink:#1d1a38;--mute:#5b5883;--line:#c4c1e0}
+:root[data-theme="dark"]{--bg:#1d1a38;--panel:#2a2650;--ink:#f3f2f8;--mute:#b3b0cf;--line:#4a4580}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:400 clamp(14px,1.5vw,19px)/1.5 "Public Sans",system-ui,sans-serif;overflow:hidden}
+.slide{display:none;position:absolute;inset:0;padding:5vh 6vw 9vh;overflow-y:auto;flex-direction:column;justify-content:center;gap:2.2vh}
+.slide.on{display:flex}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.05;letter-spacing:-.02em}
+h1{font-size:clamp(34px,7vw,92px);font-weight:800;max-width:14em}
+h2{font-size:clamp(26px,4.2vw,56px);font-weight:800;max-width:16em}
+h3{font-size:clamp(15px,1.6vw,21px);font-weight:700}
+p{margin:0;max-width:44em}
+.mute{color:var(--mute)}
+.say{border-left:4px solid var(--gel1);padding-left:1.2em;font-size:1.1em;max-width:36em}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{margin-bottom:6px}
+.card:nth-child(3n+1) h3{color:var(--gel1)}.card:nth-child(3n+2) h3{color:var(--gel2)}.card:nth-child(3n) h3{color:var(--gel3)}
+.ph{border:2px dashed var(--line);border-radius:10px;min-height:14vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;color:var(--mute);font-size:.85em}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.flow span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600}
+.flow i{color:var(--gel2);font-style:normal}
+.loop{color:var(--gel3);font-weight:600}
+.two{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.beam{position:absolute;top:0;right:0;width:45vw;height:100%;background:linear-gradient(115deg,transparent 30%,rgba(242,169,59,.22) 55%,rgba(229,64,127,.18) 80%,transparent);pointer-events:none;clip-path:polygon(60% 0,100% 0,100% 100%,0 100%)}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:10px 6vw calc(10px + env(safe-area-inset-bottom,0px));color:var(--mute);font-size:.85em;background:linear-gradient(transparent,var(--bg) 60%)}
+nav button{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 16px;font:inherit;cursor:pointer}
+nav button:focus-visible{outline:3px solid var(--gel3)}
+</style></head>
+<body>
+<main>
+<section class="slide on"><div class="beam"></div>
+<p class="mute">[Your name] · [Role you're interviewing for] · [Company]</p>
+<h1>How I turn a question into an experience</h1>
+<p class="mute">My creative process, shown through the work: how I think, why I choose, and how ideas survive contact with reality.</p></section>
+
+<section class="slide"><h2>How I think</h2>
+<p class="say">I start with the audience. What should they feel, remember and talk about afterwards? Then I work backwards into story, visual language, space, technology and performance.</p>
+<div class="grid">
+<div class="card"><h3>What excites me about live</h3><p>[One line]</p></div>
+<div class="card"><h3>What makes a great show</h3><p>[One line]</p></div>
+<div class="card"><h3>What I look for in a brief</h3><p>[One line]</p></div>
+<div class="card"><h3>What kind of problem-solver I am</h3><p>[One line]</p></div></div></section>
+
+<section class="slide"><h2>My process</h2>
+<div class="flow"><span>Understand</span><i>→</i><span>Discover</span><i>→</i><span>Define</span><i>→</i><span>Explore</span><i>→</i><span>Edit</span><i>→</i><span>Develop</span><i>→</i><span>Realise</span><i>→</i><span>Reflect</span></div>
+<div class="grid">
+<div class="card"><h3>Understand</h3><p>What are we actually trying to achieve?</p></div>
+<div class="card"><h3>Discover</h3><p>What's interesting about this world, audience, problem?</p></div>
+<div class="card"><h3>Define</h3><p>What's the central creative thought?</p></div>
+<div class="card"><h3>Explore</h3><p>What could this become?</p></div>
+<div class="card"><h3>Edit</h3><p>Which idea has the most potential?</p></div>
+<div class="card"><h3>Develop</h3><p>How does it work as a show?</p></div>
+<div class="card"><h3>Realise</h3><p>How do we make it happen?</p></div>
+<div class="card"><h3>Reflect</h3><p>What worked, what didn't, what did I learn?</p></div></div>
+<p class="loop">It isn't linear. A technical constraint sends me back into the idea; a rehearsal can change the storytelling entirely.</p></section>
+
+<section class="slide"><p class="mute">Project 01: [Show name]</p><h2>The brief and the problem</h2>
+<div class="two">
+<div class="card"><h3>The brief</h3><p>What were you asked to do? [Client, venue, audience size, date]</p></div>
+<div class="card"><h3>The problem</h3><p>What was difficult, unclear or creatively interesting?</p></div></div>
+<div class="ph">Image: brief document, venue plan or first reference</div></section>
+
+<section class="slide"><p class="mute">Project 01</p><h2>Finding the idea</h2>
+<div class="two">
+<div class="card"><h3>The insight</h3><p>What did you realise that unlocked the project?</p></div>
+<div class="card"><h3>The big idea</h3><p>"What if the audience doesn't watch the show, but is inside it?" [Replace with yours]</p></div></div>
+<div class="grid">
+<div class="card"><h3>What is it?</h3><p>One sentence.</p></div>
+<div class="card"><h3>Why this, why now?</h3><p>The observation behind it.</p></div>
+<div class="card"><h3>How is it experienced?</h3><p>Not just how it looks.</p></div>
+<div class="card"><h3>Why does it work?</h3><p>Emotionally, narratively, commercially.</p></div></div></section>
+
+<section class="slide"><p class="mute">Project 01</p><h2>The messy middle</h2>
+<p class="mute">Let them watch you think: initial thought, then the evidence of how it changed.</p>
+<div class="grid">
+<div class="ph">Rough sketch</div><div class="ph">Reference / moodboard</div><div class="ph">Spatial diagram</div>
+<div class="ph">Rejected version</div><div class="ph">Experiment / prototype</div><div class="ph">Rehearsal photo</div></div></section>
+
+<section class="slide"><p class="mute">Project 01</p><h2>The decision, and the idea we killed</h2>
+<div class="two">
+<div class="card"><h3>Route A (chosen)</h3><p>What it was, and why it won.</p></div>
+<div class="card"><h3>Route B (killed)</h3><p>We pursued X because… we discovered Y… so we changed direction to Z.</p></div></div>
+<p class="say">Creative judgement matters more than good taste. Show the moment you used it.</p></section>
+
+<section class="slide"><p class="mute">Project 01</p><h2>Making it real</h2>
+<p class="say">My role in this was… [be specific]</p>
+<div class="two">
+<div class="card"><h3>Who I worked with</h3><p>Directors, producers, designers, choreographers, performers, musicians, lighting, video, scenic, costume, technical, client. What did each change about the idea?</p></div>
+<div class="card"><h3>What pushed back</h3><p>Budget, venue, timings, safety, technical limits, talent, stakeholder opinions, rehearsals. What did you do about each?</p></div></div></section>
+
+<section class="slide"><p class="mute">Project 01</p><h2>The result: what the audience experienced</h2>
+<div class="ph" style="min-height:22vh">Hero image or video of the finished show</div>
+<div class="flow"><span>Anticipation</span><i>→</i><span>Arrival</span><i>→</i><span>Discovery</span><i>→</i><span>Immersion</span><i>→</i><span>Surprise</span><i>→</i><span>Climax</span><i>→</i><span>Afterimage</span></div>
+<p class="mute">For each stage: which creative decision shaped it? One thing I learned: [reflection]</p></section>
+
+<section class="slide"><h2>Projects 02 and 03</h2>
+<p class="mute">Same journey, told faster. Project 03 should show a different side of you.</p>
+<div class="two">
+<div class="card"><h3>Project 02: [Name]</h3><p>Brief → Insight → Big idea → Decision → Reality → Result</p><div class="ph" style="margin-top:10px">Image</div></div>
+<div class="card"><h3>Project 03: [Name]</h3><p>Brief → Insight → Big idea → Decision → Reality → Result</p><div class="ph" style="margin-top:10px">Image</div></div></div></section>
+
+<section class="slide"><h2>What I've learned about making live work</h2>
+<div class="grid">
+<div class="card"><h3>Start with the audience, not the medium.</h3></div>
+<div class="card"><h3>Find the simplest expression of the big idea.</h3></div>
+<div class="card"><h3>Make the constraints part of the creativity.</h3></div>
+<div class="card"><h3>The best ideas get better when other people attack them.</h3></div></div></section>
+
+<section class="slide"><div class="beam"></div><h2>What I'd bring to your creative process</h2>
+<p class="say">With every new brief I'm trying to understand three things: what needs to be felt, what needs to be remembered, and what needs to be made possible.</p>
+<div class="grid">
+<div class="card"><h3>A creative strength</h3><p>[Yours]</p></div>
+<div class="card"><h3>A way of collaborating</h3><p>[Yours]</p></div>
+<div class="card"><h3>A way of thinking about audiences</h3><p>[Yours]</p></div></div></section>
+</main>
+<nav><button id="p" aria-label="Previous slide">Previous</button><span id="c"></span><button id="n" aria-label="Next slide">Next</button></nav>
+<script>
+var s=document.querySelectorAll('.slide'),i=0,c=document.getElementById('c');
+function go(k){i=Math.max(0,Math.min(s.length-1,k));s.forEach(function(e,j){e.classList.toggle('on',j===i)});s[i].scrollTop=0;c.textContent=(i+1)+' / '+s.length;try{location.hash=i+1}catch(e){}}
+document.getElementById('p').onclick=function(){go(i-1)};document.getElementById('n').onclick=function(){go(i+1)};
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown')go(i+1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(i-1)});
+go((parseInt(location.hash.slice(1))||1)-1);
+</script></body></html>
